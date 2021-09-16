@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-image: url("images/pattern-background-desktop.svg");
+      text-align: center;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .container{
+      margin: 3rem auto;
+      background-color: white;
+      width: 25rem;
+      height: 38rem;
+      border-radius: 20px;
+    }
+    .hero{
+      width: 25rem;
+    }
+    .plan{
+      background-color: hsl(225, 100%, 98%);
+      margin: auto;
+      width: 80%;
+      height: 15%;
+      border-radius: 10px;
+      margin: 1rem auto 1.5rem;
+    }
+    .Annual-Plan{
+      display: inline-block;
+      clear: both;
+      position: relative;
+      top: 1em;
+      right: 50px;
+    }
+    .annual{
+      padding-bottom: 0.2em;
+      margin: 0;
+      display: fixed;
+    }
+    .button{
+      width: 16rem;
+      background-color:  hsl(245, 75%, 52%);
+      margin: auto;
+      padding: 12px 30px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      color: white;
+    }
+    .Change{
+      float: right;
+      position: relative;
+      top: 1.5rem;
+      right: 2rem;
+    }
+    .link3:hover{
+      color: blue;
+    }
+    .image{
+      float: left;
+      margin: 0.9rem ;
+    }
+    .hero{
+      border-radius: 20px 20px 0 0;
+    }
+    .para{
+      width: 70%;
+      margin: auto;
+      color: hsl(224, 23%, 55%);
+      font-size: 1rem;
+    }
+    #year{
+      color: hsl(224, 23%, 55%);
+      font-size: 1rem;
+    }
+    .cancel{
+      width: 16rem;
+      margin: auto;
+      padding: 10px 30px;
+      border-radius: 10px;
+      color: hsl(224, 23%, 55%);
+      font-weight: 800;
+    }
+    h2{
+      margin-top: 2rem;
+      font-weight: 1000;
+    }
+    .link1{
+      color: white;
+      text-decoration: none;
+    }
+    .link2{
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+    }
+    .link2:hover{
+      color: black;
+    }
+    .button:hover{
+      background-color: fuchsia;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="hero" src="images/illustration-hero.svg" alt="illustration-hero">
+    <h2>Order Summary</h2>
+
+    <div class="para">
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
+    </div>
+  
+    <div class="plan">
+      <img class="image" src="images/icon-music.svg" alt="">
+      <div class="Annual-Plan">
+        <p class="annual"><b>Annual Plan</b></p>
+        <p class="annual" id="year">$59.99/year</p>
+      </div>
+      <div class="Change"><a class="link3" href="#">Change</a></div>
+    </div>
+    <div class="button"><a class="link1" href="#">Proceed to Payment</a></div>
+    <div class="cancel"><a href="#" class="link2">Cancel Order</a></div>
+  </div>
+
+</body>
+</html>
